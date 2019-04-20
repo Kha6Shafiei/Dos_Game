@@ -1,30 +1,28 @@
 //********************************************************************
-//  Card.java       
+//  Card.java
 //
-// 
+//
 //********************************************************************
-import java.util.Random;
 
-public class Card
-{
-    public final static int ONE   = 1;
-    public final static int TWO   = 2;
+public class Card {
+    public final static int ONE = 1;
+    public final static int TWO = 2;
     public final static int THREE = 3;
-    public final static int FOUR  = 4;
-    public final static int FIVE  = 5;
-    public final static int SIX   = 6;
+    public final static int FOUR = 4;
+    public final static int FIVE = 5;
+    public final static int SIX = 6;
     public final static int SEVEN = 7;
     public final static int EIGHT = 8;
-    public final static int NINE  = 9;
-    public final static int TEN   = 10;
-    public final static int JACK  = 11;
+    public final static int NINE = 9;
+    public final static int TEN = 10;
+    public final static int JACK = 11;
     public final static int QUEEN = 12;
-    public final static int KING  = 13;
+    public final static int KING = 13;
 
-    public final static int CLUBS    = 1;
+    public final static int CLUBS = 1;
     public final static int DIAMONDS = 2;
-    public final static int HEARTS   = 3;
-    public final static int SPADES   = 4;
+    public final static int HEARTS = 3;
+    public final static int SPADES = 4;
 
     private final static int NUM_FACES = 13;
     private final static int NUM_SUITS = 4;
@@ -35,8 +33,7 @@ public class Card
     //-----------------------------------------------------------------
     //  Creates a card of the specified suit and face value.
     //-----------------------------------------------------------------
-    public Card(int faceValue, int suitValue)
-    {
+    public Card(int faceValue, int suitValue) {
         face = faceValue;
         setFaceName();
 
@@ -48,19 +45,17 @@ public class Card
     //  Sets the string representation of the face using its stored
     //  numeric value.
     //-----------------------------------------------------------------
-    protected void setFaceName()
-    {
-        switch (face)
-        {
+    protected void setFaceName() {
+        switch (face) {
             case ONE:
-            	faceName = "One";
-            	break;
+                faceName = "One";
+                break;
             case TWO:
-            	faceName = "Two";
-            	break;
+                faceName = "Two";
+                break;
             case THREE:
-            	faceName = "Three";
-            	break;
+                faceName = "Three";
+                break;
             case FOUR:
                 faceName = "Four";
                 break;
@@ -98,10 +93,8 @@ public class Card
     //  Sets the string representation of the suit using its stored
     //  numeric value.
     //-----------------------------------------------------------------
-    protected void setSuitName()
-    {
-        switch (suit)
-        {
+    protected void setSuitName() {
+        switch (suit) {
             case CLUBS:
                 suitName = "Clubs";
                 break;
@@ -120,32 +113,28 @@ public class Card
     //-----------------------------------------------------------------
     //  Returns the face (numeric value) of this card.
     //-----------------------------------------------------------------
-    public int getFace()
-    {
+    public int getFace() {
         return face;
     }
 
     //-----------------------------------------------------------------
     //  Returns the suit (numeric value) of this card.
     //-----------------------------------------------------------------
-    public int getSuit()
-    {
+    public int getSuit() {
         return suit;
     }
 
     //-----------------------------------------------------------------
     //  Returns the face (string value) of this card.
     //-----------------------------------------------------------------
-    public String getFaceName()
-    {
+    public String getFaceName() {
         return faceName;
     }
 
     //-----------------------------------------------------------------
     //  Returns the suit (string value) of this card.
     //-----------------------------------------------------------------
-    public String getSuitName()
-    {
+    public String getSuitName() {
         return suitName;
     }
 
@@ -153,8 +142,7 @@ public class Card
     //  Returns the string representation of this card, including
     //  both face and suit.
     //-----------------------------------------------------------------
-    public String toString()
-    {
+    public String toString() {
         return faceName + " of " + suitName;
     }
 }
